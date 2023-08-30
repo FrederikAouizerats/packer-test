@@ -1,0 +1,558 @@
+2023/08/30 12:29:25 [INFO] Packer version: 1.9.4 [go1.20.7 darwin amd64]
+2023/08/30 12:29:25 [TRACE] discovering plugins in /usr/local/bin
+2023/08/30 12:29:25 [TRACE] discovering plugins in .
+2023/08/30 12:29:25 [TRACE] discovering plugins in /Users/frederik/.config/packer/plugins
+2023/08/30 12:29:25 [INFO] Discovered potential plugin: ibmcloud = /Users/frederik/.config/packer/plugins/github.com/ibm/ibmcloud/packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64
+2023/08/30 12:29:25 [INFO] found external [classic vpc] builders from ibmcloud plugin
+2023/08/30 12:29:25 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/08/30 12:29:25 [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/frederik/.packerconfig
+2023/08/30 12:29:25 [WARN] Config file doesn't exist: /Users/frederik/.packerconfig
+2023/08/30 12:29:25 [INFO] Setting cache directory: /Users/frederik/.cache/packer
+2023/08/30 12:29:25 [TRACE] listing potential installations for "github.com/ibm/ibmcloud" that match ">=v3.0.0". plugingetter.ListInstallationsOptions{FromFolders:[]string{"/usr/local/bin", ".", "/Users/frederik/.config/packer/plugins"}, BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"darwin", ARCH:"amd64", Ext:"", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xc00078a100)}}}}
+2023/08/30 12:29:25 [TRACE] Found the following "github.com/ibm/ibmcloud" installations: [{/Users/frederik/.config/packer/plugins/github.com/ibm/ibmcloud/packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 v3.1.1}]
+2023/08/30 12:29:25 [INFO] found external [classic vpc] builders from ibmcloud plugin
+2023/08/30 12:29:25 [TRACE] validateValue: not active for REGION, so skipping
+2023/08/30 12:29:25 [TRACE] validateValue: not active for RESOURCE_GROUP_ID, so skipping
+2023/08/30 12:29:25 [TRACE] validateValue: not active for IBM_API_KEY, so skipping
+2023/08/30 12:29:25 [TRACE] validateValue: not active for SUBNET_ID, so skipping
+2023/08/30 12:29:25 [INFO] Starting external plugin /Users/frederik/.config/packer/plugins/github.com/ibm/ibmcloud/packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 start builder vpc
+2023/08/30 12:29:25 Starting plugin: /Users/frederik/.config/packer/plugins/github.com/ibm/ibmcloud/packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 []string{"/Users/frederik/.config/packer/plugins/github.com/ibm/ibmcloud/packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64", "start", "builder", "vpc"}
+2023/08/30 12:29:25 Waiting for RPC address for: /Users/frederik/.config/packer/plugins/github.com/ibm/ibmcloud/packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64
+2023/08/30 12:29:25 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:25 Plugin address: unix /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-plugin3980486577
+2023/08/30 12:29:25 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:25 Waiting for connection...
+2023/08/30 12:29:25 Received unix RPC address for /Users/frederik/.config/packer/plugins/github.com/ibm/ibmcloud/packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64: addr is /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-plugin3980486577
+2023/08/30 12:29:25 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:25 Serving a plugin connection...
+2023/08/30 12:29:25 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:25 [TRACE] starting builder vpc
+2023/08/30 12:29:25 [INFO] Starting internal plugin packer-provisioner-file
+2023/08/30 12:29:25 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-file"}
+2023/08/30 12:29:25 Waiting for RPC address for: /usr/local/bin/packer
+2023/08/30 12:29:25 packer-provisioner-file plugin: [INFO] Packer version: 1.9.4 [go1.20.7 darwin amd64]
+2023/08/30 12:29:25 packer-provisioner-file plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/08/30 12:29:25 packer-provisioner-file plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/frederik/.packerconfig
+2023/08/30 12:29:25 packer-provisioner-file plugin: [WARN] Config file doesn't exist: /Users/frederik/.packerconfig
+2023/08/30 12:29:25 packer-provisioner-file plugin: [INFO] Setting cache directory: /Users/frederik/.cache/packer
+2023/08/30 12:29:25 packer-provisioner-file plugin: args: []string{"packer-provisioner-file"}
+2023/08/30 12:29:25 packer-provisioner-file plugin: Plugin address: unix /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-plugin1235373104
+2023/08/30 12:29:25 packer-provisioner-file plugin: Waiting for connection...
+2023/08/30 12:29:25 Received unix RPC address for /usr/local/bin/packer: addr is /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-plugin1235373104
+2023/08/30 12:29:25 packer-provisioner-file plugin: Serving a plugin connection...
+2023/08/30 12:29:25 [INFO] Starting internal plugin packer-provisioner-file
+2023/08/30 12:29:25 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-file"}
+2023/08/30 12:29:25 Waiting for RPC address for: /usr/local/bin/packer
+2023/08/30 12:29:25 packer-provisioner-file plugin: [INFO] Packer version: 1.9.4 [go1.20.7 darwin amd64]
+2023/08/30 12:29:25 packer-provisioner-file plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/08/30 12:29:25 packer-provisioner-file plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/frederik/.packerconfig
+2023/08/30 12:29:25 packer-provisioner-file plugin: [WARN] Config file doesn't exist: /Users/frederik/.packerconfig
+2023/08/30 12:29:25 packer-provisioner-file plugin: [INFO] Setting cache directory: /Users/frederik/.cache/packer
+2023/08/30 12:29:25 packer-provisioner-file plugin: args: []string{"packer-provisioner-file"}
+2023/08/30 12:29:25 packer-provisioner-file plugin: Plugin address: unix /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-plugin1456656704
+2023/08/30 12:29:25 Received unix RPC address for /usr/local/bin/packer: addr is /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-plugin1456656704
+2023/08/30 12:29:25 packer-provisioner-file plugin: Waiting for connection...
+2023/08/30 12:29:25 packer-provisioner-file plugin: Serving a plugin connection...
+2023/08/30 12:29:25 [INFO] Starting internal plugin packer-provisioner-shell
+2023/08/30 12:29:25 Starting plugin: /usr/local/bin/packer []string{"/usr/local/bin/packer", "plugin", "packer-provisioner-shell"}
+2023/08/30 12:29:25 Waiting for RPC address for: /usr/local/bin/packer
+2023/08/30 12:29:25 packer-provisioner-shell plugin: [INFO] Packer version: 1.9.4 [go1.20.7 darwin amd64]
+2023/08/30 12:29:25 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2023/08/30 12:29:25 packer-provisioner-shell plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: /Users/frederik/.packerconfig
+2023/08/30 12:29:25 packer-provisioner-shell plugin: [WARN] Config file doesn't exist: /Users/frederik/.packerconfig
+2023/08/30 12:29:25 packer-provisioner-shell plugin: [INFO] Setting cache directory: /Users/frederik/.cache/packer
+2023/08/30 12:29:25 packer-provisioner-shell plugin: args: []string{"packer-provisioner-shell"}
+2023/08/30 12:29:25 packer-provisioner-shell plugin: Plugin address: unix /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-plugin1049289603
+2023/08/30 12:29:25 packer-provisioner-shell plugin: Waiting for connection...
+2023/08/30 12:29:25 Received unix RPC address for /usr/local/bin/packer: addr is /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-plugin1049289603
+2023/08/30 12:29:25 packer-provisioner-shell plugin: Serving a plugin connection...
+2023/08/30 12:29:25 ui: [1;32mibmcloud-vpc.ubuntucompose: output will be in this color.[0m
+2023/08/30 12:29:25 ui: 
+2023/08/30 12:29:25 Build debug mode: false
+2023/08/30 12:29:25 Force build: false
+2023/08/30 12:29:25 On error: 
+2023/08/30 12:29:25 Waiting on builds to complete...
+2023/08/30 12:29:25 Starting build run: ibmcloud-vpc.ubuntucompose
+2023/08/30 12:29:25 Running builder: 
+2023/08/30 12:29:25 [INFO] (telemetry) Starting builder ibmcloud-vpc.ubuntucompose
+2023/08/30 12:29:25 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: *************************************************************[0m
+2023/08/30 12:29:25 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: * Initializing IBM Cloud Packer Plugin - VPC Infrastructure *[0m
+2023/08/30 12:29:25 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: *************************************************************[0m
+2023/08/30 12:29:25 ui: [1;32m==> ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:29:25 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Creating VPC service...[0m
+2023/08/30 12:29:25 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: VPC service creation successful![0m
+2023/08/30 12:29:25 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Retrieving Subnet 02b7-f925fe5d-1b9e-4395-bb30-5eff441055fb information...[0m
+2023/08/30 12:29:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Subnet Information successfully retrieved ...[0m
+2023/08/30 12:29:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: VPC ID: r010-ad54eab5-6f86-4f97-820c-6587f4b09a4d[0m
+2023/08/30 12:29:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Zone: eu-de-1[0m
+2023/08/30 12:29:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Creating SSH Public and Private Key Pair...[0m
+2023/08/30 12:29:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Writing Private SSH Key to a file 1693387768125671000ssh_keys/id_rsa[0m
+2023/08/30 12:29:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Writing Public SSH Key to a file 1693387768125671000ssh_keys/id_rsa.pub[0m
+2023/08/30 12:29:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Public and Private SSH Key Pair successfully created.[0m
+2023/08/30 12:29:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Creating a new SSH key for VPC...[0m
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: SSH Key for VPC successfully created![0m
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: SSH Key for VPC's Name: packer-vpc-ssh-key-1693387765318399000[0m
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: SSH Key for VPC's ID: r010-3ddac44d-3693-49e6-a874-687e5e2a4897[0m
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Creating Instance...[0m
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Instance successfully created![0m
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Instance's Name: packer-vpc-vsi-1693387765318399000[0m
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Instance's ID: 02b7_34daf173-956a-45cb-817f-ae458c10d364[0m
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Waiting for the instance to become ACTIVE...[0m
+2023/08/30 12:29:30 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:30 Waiting for up to 1800 seconds for resource to become ready
+2023/08/30 12:29:30 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:29:30 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:30 Checking resource state... (attempt: 1)
+2023/08/30 12:29:41 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:29:41 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:41 Checking resource state... (attempt: 2)
+2023/08/30 12:29:42 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Instance is ACTIVE![0m
+2023/08/30 12:29:42 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Getting public IP...[0m
+2023/08/30 12:29:42 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Reserve a Floating IP and associate it to the instance's network interface[0m
+2023/08/30 12:29:42 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Reserving a Floating IP[0m
+2023/08/30 12:29:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Waiting for the Floating IP to become ACTIVE...[0m
+2023/08/30 12:29:44 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:44 Waiting for up to 1800 seconds for resource to become ready
+2023/08/30 12:29:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:29:44 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:44 Checking resource state... (attempt: 1)
+2023/08/30 12:29:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Floating IP is ACTIVE![0m
+2023/08/30 12:29:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Creating a temp Security Group on VPC r010-ad54eab5-6f86-4f97-820c-6587f4b09a4d ...[0m
+2023/08/30 12:29:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Temp Security Group on VPC successfully created![0m
+2023/08/30 12:29:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Security Group's Name: packer-vpc-security-group-1693387765318399000[0m
+2023/08/30 12:29:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Security Group's ID: r010-9e41416b-731b-42cd-9356-e2ae83da3957[0m
+2023/08/30 12:29:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Creating Security Group's rule to allow ssh connection...[0m
+2023/08/30 12:29:45 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Security Group's rule to allow ssh connection successfully created![0m
+2023/08/30 12:29:45 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Attaching Instance to the Security Group[0m
+2023/08/30 12:29:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Instance successfully added to the Security Group.[0m
+2023/08/30 12:29:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Using SSH communicator to connect: 149.81.13.11[0m
+2023/08/30 12:29:46 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:46 [INFO] Waiting for SSH, up to timeout: 15m0s
+2023/08/30 12:29:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Waiting for SSH to become available...[0m
+2023/08/30 12:29:48 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:48 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 149.81.13.11:22: connect: connection refused
+2023/08/30 12:29:53 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:53 [DEBUG] TCP connection to SSH ip/port failed: dial tcp 149.81.13.11:22: connect: connection refused
+2023/08/30 12:29:58 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:58 [INFO] Attempting SSH connection to 149.81.13.11:22...
+2023/08/30 12:29:58 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:58 [DEBUG] reconnecting to TCP connection for SSH
+2023/08/30 12:29:58 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:58 [DEBUG] handshaking with SSH
+2023/08/30 12:29:58 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:58 [DEBUG] handshake complete!
+2023/08/30 12:29:58 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:29:58 [DEBUG] Opening new ssh session
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [INFO] agent forwarding enabled
+2023/08/30 12:30:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Connected to SSH![0m
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 Running the provision hook
+2023/08/30 12:30:00 [INFO] (telemetry) Starting provisioner file
+2023/08/30 12:30:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Uploading bootstrap_docker_ce.sh => /tmp/bootstrap_docker_ce.sh[0m
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Opening new ssh session
+2023/08/30 12:30:00 packer-provisioner-file plugin: [INFO] 756 bytes written for 'uploadData'
+2023/08/30 12:30:00 [INFO] 756 bytes written for 'uploadData'
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Starting remote scp process:  scp -vt /tmp
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Started SCP session, beginning transfers...
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] scp: Uploading bootstrap_docker_ce.sh: perms=C0644 size=756
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] SCP session complete, closing stdin pipe.
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Waiting for SSH session to complete.
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] scp stderr (length 78): Sink: C0644 756 bootstrap_docker_ce.sh
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: scp: debug1: fd 0 clearing O_NONBLOCK
+2023/08/30 12:30:00 packer-provisioner-file plugin: closing
+2023/08/30 12:30:00 closing
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 closing
+2023/08/30 12:30:00 [INFO] (telemetry) ending file
+2023/08/30 12:30:00 [INFO] (telemetry) Starting provisioner file
+2023/08/30 12:30:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Uploading cleanup.sh => /tmp/cleanup.sh[0m
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Opening new ssh session
+2023/08/30 12:30:00 packer-provisioner-file plugin: [INFO] 180 bytes written for 'uploadData'
+2023/08/30 12:30:00 [INFO] 180 bytes written for 'uploadData'
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Starting remote scp process:  scp -vt /tmp
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Started SCP session, beginning transfers...
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] scp: Uploading cleanup.sh: perms=C0644 size=180
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] SCP session complete, closing stdin pipe.
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Waiting for SSH session to complete.
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] scp stderr (length 66): Sink: C0644 180 cleanup.sh
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: scp: debug1: fd 0 clearing O_NONBLOCK
+2023/08/30 12:30:00 packer-provisioner-file plugin: closing
+2023/08/30 12:30:00 closing
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 closing
+2023/08/30 12:30:00 [INFO] (telemetry) ending file
+2023/08/30 12:30:00 [INFO] (telemetry) Starting provisioner shell
+2023/08/30 12:30:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Provisioning with shell script: /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-shell2455825123[0m
+2023/08/30 12:30:00 packer-provisioner-shell plugin: Opening /var/folders/bb/9q2n6x4x2_s6ln5kc4vt4r740000gn/T/packer-shell2455825123 for reading
+2023/08/30 12:30:00 packer-provisioner-shell plugin: [INFO] 157 bytes written for 'uploadData'
+2023/08/30 12:30:00 [INFO] 157 bytes written for 'uploadData'
+2023/08/30 12:30:00 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:00 [DEBUG] Opening new ssh session
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] Starting remote scp process:  scp -vt /tmp
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] Started SCP session, beginning transfers...
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] Copying input data into temporary file so we can read the length
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] scp: Uploading script_1833.sh: perms=C0644 size=157
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] SCP session complete, closing stdin pipe.
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] Waiting for SSH session to complete.
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] scp stderr (length 70): Sink: C0644 157 script_1833.sh
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: scp: debug1: fd 0 clearing O_NONBLOCK
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] Opening new ssh session
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] starting remote command: chmod 0755 /tmp/script_1833.sh
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [INFO] RPC endpoint: Communicator ended with: 0
+2023/08/30 12:30:01 [INFO] RPC client: Communicator ended with: 0
+2023/08/30 12:30:01 [INFO] RPC endpoint: Communicator ended with: 0
+2023/08/30 12:30:01 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] Opening new ssh session
+2023/08/30 12:30:01 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:30:01 [DEBUG] starting remote command: echo 'packer' | sudo -S sh -c 'PACKER_BUILDER_TYPE='ibmcloud-vpc' PACKER_BUILD_NAME='ubuntucompose'  /tmp/script_1833.sh'
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: root[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: total 60K[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt 12 root root 4.0K Aug 30 09:30 .[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxr-xr-x 19 root root 4.0K Aug 30 09:29 ..[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .ICE-unix[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .Test-unix[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .X11-unix[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .XIM-unix[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .font-unix[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: -rwxr-xr-x  1 root root  756 Aug 30 09:30 bootstrap_docker_ce.sh[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: -rwxr-xr-x  1 root root  180 Aug 30 09:30 cleanup.sh[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: -rwxr-xr-x  1 root root  157 Aug 30 09:30 script_1833.sh[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  3 root root 4.0K Aug 30 09:29 snap-private-tmp[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  2 root root 4.0K Aug 30 09:29 ssh-XXXXnhp61L[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  3 root root 4.0K Aug 30 09:29 systemd-private-33a9e04aab0948a688deb4f4843f486a-systemd-logind.service-43TR03[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  3 root root 4.0K Aug 30 09:29 systemd-private-33a9e04aab0948a688deb4f4843f486a-systemd-resolved.service-QSkIlZ[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  3 root root 4.0K Aug 30 09:29 systemd-private-33a9e04aab0948a688deb4f4843f486a-systemd-timedated.service-kTk6js[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Hit:1 http://mirrors.adn.networklayer.com/ubuntu jammy InRelease[0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:2 http://mirrors.adn.networklayer.com/ubuntu jammy-updates InRelease [119 kB][0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:3 http://mirrors.adn.networklayer.com/ubuntu jammy-backports InRelease [109 kB][0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:4 http://mirrors.adn.networklayer.com/ubuntu jammy-security InRelease [110 kB][0m
+2023/08/30 12:30:01 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:5 http://mirrors.adn.networklayer.com/ubuntu jammy/universe amd64 Packages [14.1 MB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:6 http://mirrors.adn.networklayer.com/ubuntu jammy/universe Translation-en [5652 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:7 http://mirrors.adn.networklayer.com/ubuntu jammy/universe amd64 c-n-f Metadata [286 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:8 http://mirrors.adn.networklayer.com/ubuntu jammy/multiverse amd64 Packages [217 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:9 http://mirrors.adn.networklayer.com/ubuntu jammy/multiverse Translation-en [112 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:10 http://mirrors.adn.networklayer.com/ubuntu jammy/multiverse amd64 c-n-f Metadata [8372 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:11 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/main amd64 Packages [929 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:12 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/main Translation-en [218 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:13 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [15.6 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:14 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/restricted amd64 Packages [779 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:15 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/restricted Translation-en [125 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:16 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [536 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:17 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/universe amd64 Packages [976 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:18 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/universe Translation-en [213 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:19 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [21.7 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:20 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/multiverse amd64 Packages [41.6 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:21 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/multiverse Translation-en [9768 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:22 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [476 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:23 http://mirrors.adn.networklayer.com/ubuntu jammy-backports/main amd64 Packages [40.8 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:24 http://mirrors.adn.networklayer.com/ubuntu jammy-backports/main Translation-en [10.2 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:25 http://mirrors.adn.networklayer.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:26 http://mirrors.adn.networklayer.com/ubuntu jammy-backports/restricted amd64 c-n-f Metadata [116 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:27 http://mirrors.adn.networklayer.com/ubuntu jammy-backports/universe amd64 Packages [22.3 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:28 http://mirrors.adn.networklayer.com/ubuntu jammy-backports/universe Translation-en [15.4 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:29 http://mirrors.adn.networklayer.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [576 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:30 http://mirrors.adn.networklayer.com/ubuntu jammy-backports/multiverse amd64 c-n-f Metadata [116 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:31 http://mirrors.adn.networklayer.com/ubuntu jammy-security/main amd64 Packages [714 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:32 http://mirrors.adn.networklayer.com/ubuntu jammy-security/main Translation-en [159 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:33 http://mirrors.adn.networklayer.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11.2 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:34 http://mirrors.adn.networklayer.com/ubuntu jammy-security/restricted amd64 Packages [744 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:35 http://mirrors.adn.networklayer.com/ubuntu jammy-security/restricted Translation-en [119 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:36 http://mirrors.adn.networklayer.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [536 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:37 http://mirrors.adn.networklayer.com/ubuntu jammy-security/universe amd64 Packages [778 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:38 http://mirrors.adn.networklayer.com/ubuntu jammy-security/universe Translation-en [142 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:39 http://mirrors.adn.networklayer.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16.6 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:40 http://mirrors.adn.networklayer.com/ubuntu jammy-security/multiverse amd64 Packages [36.5 kB][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:41 http://mirrors.adn.networklayer.com/ubuntu jammy-security/multiverse Translation-en [7060 B][0m
+2023/08/30 12:30:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:42 http://mirrors.adn.networklayer.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B][0m
+2023/08/30 12:30:11 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Fetched 26.9 MB in 4s (6786 kB/s)[0m
+2023/08/30 12:30:11 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Reading package lists...[0m
+2023/08/30 12:30:11 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Reading package lists...[0m
+2023/08/30 12:30:11 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Building dependency tree...[0m
+2023/08/30 12:30:11 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Reading state information...[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: gnupg is already the newest version (2.2.27-3ubuntu2.1).[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: gnupg set to manually installed.[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: The following packages will be upgraded:[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose:   ca-certificates curl libcurl4[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: 3 upgraded, 0 newly installed, 0 to remove and 101 not upgraded.[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Need to get 640 kB of archives.[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: After this operation, 23.6 kB of additional disk space will be used.[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:1 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/main amd64 ca-certificates all 20230311ubuntu0.22.04.1 [155 kB][0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:2 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/main amd64 curl amd64 7.81.0-1ubuntu1.13 [194 kB][0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:3 http://mirrors.adn.networklayer.com/ubuntu jammy-updates/main amd64 libcurl4 amd64 7.81.0-1ubuntu1.13 [290 kB][0m
+2023/08/30 12:30:12 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: unable to initialize frontend: Dialog[0m
+2023/08/30 12:30:12 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+2023/08/30 12:30:12 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: falling back to frontend: Readline[0m
+2023/08/30 12:30:12 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: unable to initialize frontend: Readline[0m
+2023/08/30 12:30:12 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: (This frontend requires a controlling tty.)[0m
+2023/08/30 12:30:12 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: falling back to frontend: Teletype[0m
+2023/08/30 12:30:12 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: dpkg-preconfigure: unable to re-open stdin:[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Fetched 640 kB in 0s (16.9 MB/s)[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: (Reading database ... 70125 files and directories currently installed.)[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../ca-certificates_20230311ubuntu0.22.04.1_all.deb ...[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking ca-certificates (20230311ubuntu0.22.04.1) over (20211016ubuntu0.22.04.1) ...[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../curl_7.81.0-1ubuntu1.13_amd64.deb ...[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking curl (7.81.0-1ubuntu1.13) over (7.81.0-1ubuntu1.10) ...[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../libcurl4_7.81.0-1ubuntu1.13_amd64.deb ...[0m
+2023/08/30 12:30:12 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking libcurl4:amd64 (7.81.0-1ubuntu1.13) over (7.81.0-1ubuntu1.10) ...[0m
+2023/08/30 12:30:13 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up ca-certificates (20230311ubuntu0.22.04.1) ...[0m
+2023/08/30 12:30:13 ui: [0;32m    ibmcloud-vpc.ubuntucompose: debconf: unable to initialize frontend: Dialog[0m
+2023/08/30 12:30:13 ui: [0;32m    ibmcloud-vpc.ubuntucompose: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+2023/08/30 12:30:13 ui: [0;32m    ibmcloud-vpc.ubuntucompose: debconf: falling back to frontend: Readline[0m
+2023/08/30 12:30:14 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Updating certificates in /etc/ssl/certs...[0m
+2023/08/30 12:30:15 ui: [0;32m    ibmcloud-vpc.ubuntucompose: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL[0m
+2023/08/30 12:30:15 ui: [0;32m    ibmcloud-vpc.ubuntucompose: 19 added, 6 removed; done.[0m
+2023/08/30 12:30:15 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up libcurl4:amd64 (7.81.0-1ubuntu1.13) ...[0m
+2023/08/30 12:30:15 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up curl (7.81.0-1ubuntu1.13) ...[0m
+2023/08/30 12:30:15 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Processing triggers for man-db (2.10.2-1) ...[0m
+2023/08/30 12:30:15 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Processing triggers for libc-bin (2.35-0ubuntu3.1) ...[0m
+2023/08/30 12:30:17 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Processing triggers for ca-certificates (20230311ubuntu0.22.04.1) ...[0m
+2023/08/30 12:30:17 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Updating certificates in /etc/ssl/certs...[0m
+2023/08/30 12:30:17 ui: [0;32m    ibmcloud-vpc.ubuntucompose: 0 added, 0 removed; done.[0m
+2023/08/30 12:30:17 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Running hooks in /etc/ca-certificates/update.d...[0m
+2023/08/30 12:30:17 ui: [0;32m    ibmcloud-vpc.ubuntucompose: done.[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Running kernel seems to be up-to-date.[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose: No services need to be restarted.[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose: No containers need to be restarted.[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose: No user sessions are running outdated binaries.[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:18 ui: [0;32m    ibmcloud-vpc.ubuntucompose: No VM guests are running outdated hypervisor (qemu) binaries on this host.[0m
+2023/08/30 12:30:20 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Hit:1 http://mirrors.adn.networklayer.com/ubuntu jammy InRelease[0m
+2023/08/30 12:30:20 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Hit:2 http://mirrors.adn.networklayer.com/ubuntu jammy-updates InRelease[0m
+2023/08/30 12:30:20 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Hit:3 http://mirrors.adn.networklayer.com/ubuntu jammy-backports InRelease[0m
+2023/08/30 12:30:20 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Hit:4 http://mirrors.adn.networklayer.com/ubuntu jammy-security InRelease[0m
+2023/08/30 12:30:20 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:5 https://download.docker.com/linux/ubuntu jammy InRelease [48.9 kB][0m
+2023/08/30 12:30:21 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [21.4 kB][0m
+2023/08/30 12:30:21 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Fetched 70.3 kB in 0s (151 kB/s)[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Reading package lists...[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Reading package lists...[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Building dependency tree...[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Reading state information...[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: The following additional packages will be installed:[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose:   docker-ce-rootless-extras libltdl7 libslirp0 pigz slirp4netns[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Suggested packages:[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose:   aufs-tools cgroupfs-mount | cgroup-lite[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: The following NEW packages will be installed:[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose:   containerd.io docker-buildx-plugin docker-ce docker-ce-cli[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose:   docker-ce-rootless-extras docker-compose-plugin libltdl7 libslirp0 pigz[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose:   slirp4netns[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: 0 upgraded, 10 newly installed, 0 to remove and 101 not upgraded.[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Need to get 114 MB of archives.[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: After this operation, 415 MB of additional disk space will be used.[0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:1 http://mirrors.adn.networklayer.com/ubuntu jammy/universe amd64 pigz amd64 2.6-1 [63.6 kB][0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:2 http://mirrors.adn.networklayer.com/ubuntu jammy/main amd64 libltdl7 amd64 2.4.6-15build2 [39.6 kB][0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:3 http://mirrors.adn.networklayer.com/ubuntu jammy/main amd64 libslirp0 amd64 4.6.1-1build1 [61.5 kB][0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:4 http://mirrors.adn.networklayer.com/ubuntu jammy/universe amd64 slirp4netns amd64 1.0.1-2 [28.2 kB][0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:5 https://download.docker.com/linux/ubuntu jammy/stable amd64 containerd.io amd64 1.6.22-1 [28.3 MB][0m
+2023/08/30 12:30:22 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-buildx-plugin amd64 0.11.2-1~ubuntu.22.04~jammy [28.2 MB][0m
+2023/08/30 12:30:23 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:7 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-cli amd64 5:24.0.5-1~ubuntu.22.04~jammy [13.3 MB][0m
+2023/08/30 12:30:23 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:8 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce amd64 5:24.0.5-1~ubuntu.22.04~jammy [22.9 MB][0m
+2023/08/30 12:30:23 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:9 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-rootless-extras amd64 5:24.0.5-1~ubuntu.22.04~jammy [9032 kB][0m
+2023/08/30 12:30:23 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Get:10 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-compose-plugin amd64 2.20.2-1~ubuntu.22.04~jammy [11.9 MB][0m
+2023/08/30 12:30:24 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: unable to initialize frontend: Dialog[0m
+2023/08/30 12:30:24 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+2023/08/30 12:30:24 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: falling back to frontend: Readline[0m
+2023/08/30 12:30:24 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: unable to initialize frontend: Readline[0m
+2023/08/30 12:30:24 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: (This frontend requires a controlling tty.)[0m
+2023/08/30 12:30:24 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: debconf: falling back to frontend: Teletype[0m
+2023/08/30 12:30:24 ui error: [1;31m==> ibmcloud-vpc.ubuntucompose: dpkg-preconfigure: unable to re-open stdin:[0m
+2023/08/30 12:30:25 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Fetched 114 MB in 2s (55.7 MB/s)[0m
+2023/08/30 12:30:25 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package pigz.[0m
+2023/08/30 12:30:25 ui: [0;32m    ibmcloud-vpc.ubuntucompose: (Reading database ... 70138 files and directories currently installed.)[0m
+2023/08/30 12:30:25 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../0-pigz_2.6-1_amd64.deb ...[0m
+2023/08/30 12:30:25 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking pigz (2.6-1) ...[0m
+2023/08/30 12:30:25 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package containerd.io.[0m
+2023/08/30 12:30:25 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../1-containerd.io_1.6.22-1_amd64.deb ...[0m
+2023/08/30 12:30:25 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking containerd.io (1.6.22-1) ...[0m
+2023/08/30 12:30:29 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package docker-buildx-plugin.[0m
+2023/08/30 12:30:29 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../2-docker-buildx-plugin_0.11.2-1~ubuntu.22.04~jammy_amd64.deb ...[0m
+2023/08/30 12:30:29 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking docker-buildx-plugin (0.11.2-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:32 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package docker-ce-cli.[0m
+2023/08/30 12:30:32 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../3-docker-ce-cli_5%3a24.0.5-1~ubuntu.22.04~jammy_amd64.deb ...[0m
+2023/08/30 12:30:32 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking docker-ce-cli (5:24.0.5-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:34 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package docker-ce.[0m
+2023/08/30 12:30:34 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../4-docker-ce_5%3a24.0.5-1~ubuntu.22.04~jammy_amd64.deb ...[0m
+2023/08/30 12:30:34 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking docker-ce (5:24.0.5-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:40 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package docker-ce-rootless-extras.[0m
+2023/08/30 12:30:40 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../5-docker-ce-rootless-extras_5%3a24.0.5-1~ubuntu.22.04~jammy_amd64.deb ...[0m
+2023/08/30 12:30:40 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking docker-ce-rootless-extras (5:24.0.5-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:41 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package docker-compose-plugin.[0m
+2023/08/30 12:30:41 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../6-docker-compose-plugin_2.20.2-1~ubuntu.22.04~jammy_amd64.deb ...[0m
+2023/08/30 12:30:41 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking docker-compose-plugin (2.20.2-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package libltdl7:amd64.[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../7-libltdl7_2.4.6-15build2_amd64.deb ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking libltdl7:amd64 (2.4.6-15build2) ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package libslirp0:amd64.[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../8-libslirp0_4.6.1-1build1_amd64.deb ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking libslirp0:amd64 (4.6.1-1build1) ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Selecting previously unselected package slirp4netns.[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Preparing to unpack .../9-slirp4netns_1.0.1-2_amd64.deb ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Unpacking slirp4netns (1.0.1-2) ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up docker-buildx-plugin (0.11.2-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up containerd.io (1.6.22-1) ...[0m
+2023/08/30 12:30:44 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up docker-compose-plugin (2.20.2-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up libltdl7:amd64 (2.4.6-15build2) ...[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up docker-ce-cli (5:24.0.5-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up libslirp0:amd64 (4.6.1-1build1) ...[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up pigz (2.6-1) ...[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up docker-ce-rootless-extras (5:24.0.5-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up slirp4netns (1.0.1-2) ...[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Setting up docker-ce (5:24.0.5-1~ubuntu.22.04~jammy) ...[0m
+2023/08/30 12:30:45 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.[0m
+2023/08/30 12:30:46 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.[0m
+2023/08/30 12:30:49 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Processing triggers for man-db (2.10.2-1) ...[0m
+2023/08/30 12:30:49 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Processing triggers for libc-bin (2.35-0ubuntu3.1) ...[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Running kernel seems to be up-to-date.[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose: No services need to be restarted.[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose: No containers need to be restarted.[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose: No user sessions are running outdated binaries.[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:30:50 ui: [0;32m    ibmcloud-vpc.ubuntucompose: No VM guests are running outdated hypervisor (qemu) binaries on this host.[0m
+2023/08/30 12:30:52 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Docker version 24.0.5, build ced0996[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: total 64K[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt 13 root root 4.0K Aug 30 09:30 .[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxr-xr-x 19 root root 4.0K Aug 30 09:29 ..[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .ICE-unix[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .Test-unix[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .X11-unix[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .XIM-unix[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxrwxrwt  2 root root 4.0K Aug 30 09:29 .font-unix[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: -rwxr-xr-x  1 root root  756 Aug 30 09:30 bootstrap_docker_ce.sh[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: -rwxr-xr-x  1 root root  180 Aug 30 09:30 cleanup.sh[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: -rwxr-xr-x  1 root root  157 Aug 30 09:30 script_1833.sh[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  3 root root 4.0K Aug 30 09:29 snap-private-tmp[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  2 root root 4.0K Aug 30 09:29 ssh-XXXXnhp61L[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  3 root root 4.0K Aug 30 09:29 systemd-private-33a9e04aab0948a688deb4f4843f486a-systemd-logind.service-43TR03[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  3 root root 4.0K Aug 30 09:29 systemd-private-33a9e04aab0948a688deb4f4843f486a-systemd-resolved.service-QSkIlZ[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwx------  3 root root 4.0K Aug 30 09:30 systemd-private-33a9e04aab0948a688deb4f4843f486a-systemd-timesyncd.service-r1ahqR[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: drwxr-xr-x  2 root root 4.0K Aug 30 09:30 ubuntu-advantage[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: /tmp[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Cleaning up after bootstrapping...[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Reading package lists...[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Building dependency tree...[0m
+2023/08/30 12:31:02 ui: [0;32m    ibmcloud-vpc.ubuntucompose: Reading state information...[0m
+2023/08/30 12:31:03 ui: [0;32m    ibmcloud-vpc.ubuntucompose: 0 upgraded, 0 newly installed, 0 to remove and 101 not upgraded.[0m
+2023/08/30 12:31:03 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:03 [INFO] RPC endpoint: Communicator ended with: 0
+2023/08/30 12:31:03 [INFO] 15402 bytes written for 'stdout'
+2023/08/30 12:31:03 [INFO] 802 bytes written for 'stderr'
+2023/08/30 12:31:03 [INFO] RPC client: Communicator ended with: 0
+2023/08/30 12:31:03 [INFO] RPC endpoint: Communicator ended with: 0
+2023/08/30 12:31:03 packer-provisioner-shell plugin: [INFO] 15402 bytes written for 'stdout'
+2023/08/30 12:31:03 packer-provisioner-shell plugin: [INFO] 802 bytes written for 'stderr'
+2023/08/30 12:31:03 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2023/08/30 12:31:03 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:03 [DEBUG] Opening new ssh session
+2023/08/30 12:31:03 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:03 [DEBUG] starting remote command: rm -f /tmp/script_1833.sh
+2023/08/30 12:31:03 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:03 [INFO] RPC endpoint: Communicator ended with: 0
+2023/08/30 12:31:03 [INFO] RPC client: Communicator ended with: 0
+2023/08/30 12:31:03 [INFO] RPC endpoint: Communicator ended with: 0
+2023/08/30 12:31:03 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2023/08/30 12:31:03 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:03 [DEBUG] Opening new ssh session
+2023/08/30 12:31:03 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:03 [DEBUG] starting remote command: rm -f
+2023/08/30 12:31:03 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:03 [INFO] RPC endpoint: Communicator ended with: 0
+2023/08/30 12:31:03 [INFO] RPC client: Communicator ended with: 0
+2023/08/30 12:31:03 [INFO] RPC endpoint: Communicator ended with: 0
+2023/08/30 12:31:03 packer-provisioner-shell plugin: [INFO] RPC client: Communicator ended with: 0
+2023/08/30 12:31:03 [INFO] (telemetry) ending shell
+2023/08/30 12:31:03 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Creating VPC service...[0m
+2023/08/30 12:31:03 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: VPC service creation successful![0m
+2023/08/30 12:31:03 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Rebooting instance to cleanly complete any installed software components...[0m
+2023/08/30 12:31:04 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:04 Waiting for up to 1800 seconds for resource to become ready
+2023/08/30 12:31:04 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:31:04 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:04 Checking resource state... (attempt: 1)
+2023/08/30 12:31:15 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:31:15 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:15 Checking resource state... (attempt: 2)
+2023/08/30 12:31:17 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Instance is ACTIVE![0m
+2023/08/30 12:31:17 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Stopping instance ID: 02b7_34daf173-956a-45cb-817f-ae458c10d364 ...[0m
+2023/08/30 12:31:17 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:17 Waiting for up to 1800 seconds for resource to be stopped
+2023/08/30 12:31:17 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:31:17 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:17 Checking resource state... (attempt: 1)
+2023/08/30 12:31:28 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:31:28 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:28 Checking resource state... (attempt: 2)
+2023/08/30 12:31:38 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:31:38 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:38 Checking resource state... (attempt: 3)
+2023/08/30 12:31:48 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:31:48 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:48 Checking resource state... (attempt: 4)
+2023/08/30 12:31:49 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Instance successfully stopped![0m
+2023/08/30 12:31:49 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Creating an Image from instance ID: 02b7_34daf173-956a-45cb-817f-ae458c10d364 ...[0m
+2023/08/30 12:31:53 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Image Successfully created![0m
+2023/08/30 12:31:53 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Image's Name: packer-20230830092925[0m
+2023/08/30 12:31:53 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Image's ID: r010-e8f3483a-93cc-4c10-b540-e24d0650901b[0m
+2023/08/30 12:31:53 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Waiting for the Image to become AVAILABLE...[0m
+2023/08/30 12:31:53 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:53 Waiting for up to 1800 seconds for resource to become ready
+2023/08/30 12:31:53 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:31:53 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:31:53 Checking resource state... (attempt: 1)
+2023/08/30 12:32:03 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:32:03 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:32:03 Checking resource state... (attempt: 2)
+2023/08/30 12:32:13 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:32:13 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:32:13 Checking resource state... (attempt: 3)
+2023/08/30 12:32:23 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:32:23 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:32:23 Checking resource state... (attempt: 4)
+2023/08/30 12:32:34 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:32:34 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:32:34 Checking resource state... (attempt: 5)
+2023/08/30 12:32:44 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Waiting time: 1 minutes[0m
+2023/08/30 12:32:44 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:32:44 Checking resource state... (attempt: 6)
+2023/08/30 12:32:54 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:32:54 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:32:54 Checking resource state... (attempt: 7)
+2023/08/30 12:33:04 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:33:04 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:33:04 Checking resource state... (attempt: 8)
+2023/08/30 12:33:15 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:33:15 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:33:15 Checking resource state... (attempt: 9)
+2023/08/30 12:33:25 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:33:25 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:33:25 Checking resource state... (attempt: 10)
+2023/08/30 12:33:35 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:33:35 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:33:35 Checking resource state... (attempt: 11)
+2023/08/30 12:33:45 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Waiting time: 2 minutes[0m
+2023/08/30 12:33:45 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:33:45 Checking resource state... (attempt: 12)
+2023/08/30 12:33:56 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:33:56 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:33:56 Checking resource state... (attempt: 13)
+2023/08/30 12:34:06 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:34:06 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:34:06 Checking resource state... (attempt: 14)
+2023/08/30 12:34:16 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:34:16 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:34:16 Checking resource state... (attempt: 15)
+2023/08/30 12:34:27 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:34:27 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:34:27 Checking resource state... (attempt: 16)
+2023/08/30 12:34:37 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:34:37 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:34:37 Checking resource state... (attempt: 17)
+2023/08/30 12:34:47 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Waiting time: 3 minutes[0m
+2023/08/30 12:34:47 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:34:47 Checking resource state... (attempt: 18)
+2023/08/30 12:34:58 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:34:58 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:34:58 Checking resource state... (attempt: 19)
+2023/08/30 12:35:08 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:35:08 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:35:08 Checking resource state... (attempt: 20)
+2023/08/30 12:35:18 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:35:18 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:35:18 Checking resource state... (attempt: 21)
+2023/08/30 12:35:29 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:35:29 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:35:29 Checking resource state... (attempt: 22)
+2023/08/30 12:35:39 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:35:39 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:35:39 Checking resource state... (attempt: 23)
+2023/08/30 12:35:49 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Waiting time: 4 minutes[0m
+2023/08/30 12:35:49 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:35:49 Checking resource state... (attempt: 24)
+2023/08/30 12:35:59 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: .[0m
+2023/08/30 12:35:59 packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64 plugin: 2023/08/30 12:35:59 Checking resource state... (attempt: 25)
+2023/08/30 12:36:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Image is now AVAILABLE![0m
+2023/08/30 12:36:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:36:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: ****************************************************************************[0m
+2023/08/30 12:36:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: * Cleaning Up all temporary infrastructure created during packer execution *[0m
+2023/08/30 12:36:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: ****************************************************************************[0m
+2023/08/30 12:36:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:36:00 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Releasing the Floating IP: 149.81.13.11 ...[0m
+2023/08/30 12:36:01 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: The Floating IP was successfully released![0m
+2023/08/30 12:36:03 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Deleting Instance ID: 02b7_34daf173-956a-45cb-817f-ae458c10d364 ...[0m
+2023/08/30 12:36:03 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Instance deleted Succesfully[0m
+2023/08/30 12:36:03 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Deleting Security Group's rule r010-8ffdf566-b610-49be-a34a-7b98c1b93fe0 ...[0m
+2023/08/30 12:36:04 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: The Security Group's rule was successfully deleted![0m
+2023/08/30 12:36:14 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Deleting Security Group packer-vpc-security-group-1693387765318399000 ...[0m
+2023/08/30 12:36:15 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: The Security Group was successfully deleted![0m
+2023/08/30 12:36:15 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Deleting SSH key for VPC packer-vpc-ssh-key-1693387765318399000 ...[0m
+2023/08/30 12:36:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: The Key was successfully deleted![0m
+2023/08/30 12:36:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Deleting Public and Private SSH Key Pair...[0m
+2023/08/30 12:36:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: Public and Private SSH Key Pair successfully deleted.[0m
+2023/08/30 12:36:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose:[0m
+2023/08/30 12:36:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: ********************************************************************[0m
+2023/08/30 12:36:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: * Thank you for using IBM Cloud Packer Plugin - VPC Infrastructure *[0m
+2023/08/30 12:36:46 ui: [1;32m==> ibmcloud-vpc.ubuntucompose: ********************************************************************[0m
+2023/08/30 12:36:46 [INFO] (telemetry) ending ibmcloud-vpc.ubuntucompose
+2023/08/30 12:36:46 ui: [1;32mBuild 'ibmcloud-vpc.ubuntucompose' finished after 7 minutes 20 seconds.[0m
+2023/08/30 12:36:46 ui: 
+==> Wait completed after 7 minutes 20 seconds
+2023/08/30 12:36:46 ui: 
+==> Builds finished. The artifacts of successful builds are:
+2023/08/30 12:36:46 machine readable: ibmcloud-vpc.ubuntucompose,artifact-count []string{"1"}
+2023/08/30 12:36:46 machine readable: ibmcloud-vpc.ubuntucompose,artifact []string{"0", "builder-id", "ibmcloud.vpc.builder"}
+2023/08/30 12:36:46 machine readable: ibmcloud-vpc.ubuntucompose,artifact []string{"0", "id", "r010-e8f3483a-93cc-4c10-b540-e24d0650901b"}
+2023/08/30 12:36:46 machine readable: ibmcloud-vpc.ubuntucompose,artifact []string{"0", "string", "Image Name: packer-20230830092925 || Image ID: r010-e8f3483a-93cc-4c10-b540-e24d0650901b"}
+2023/08/30 12:36:46 machine readable: ibmcloud-vpc.ubuntucompose,artifact []string{"0", "files-count", "0"}
+2023/08/30 12:36:46 machine readable: ibmcloud-vpc.ubuntucompose,artifact []string{"0", "end"}
+2023/08/30 12:36:46 ui: --> ibmcloud-vpc.ubuntucompose: Image Name: packer-20230830092925 || Image ID: r010-e8f3483a-93cc-4c10-b540-e24d0650901b
+2023/08/30 12:36:46 [INFO] (telemetry) Finalizing.
+2023/08/30 12:36:46 waiting for all plugin processes to complete...
+2023/08/30 12:36:46 /usr/local/bin/packer: plugin process exited
+2023/08/30 12:36:46 /usr/local/bin/packer: plugin process exited
+2023/08/30 12:36:46 /Users/frederik/.config/packer/plugins/github.com/ibm/ibmcloud/packer-plugin-ibmcloud_v3.1.1_x5.0_darwin_amd64: plugin process exited
+2023/08/30 12:36:46 /usr/local/bin/packer: plugin process exited

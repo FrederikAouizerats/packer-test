@@ -1,0 +1,4 @@
+aws.playbook.yml
+script-error-with-packer.rtf
+crash.log
+var.pkr.hcl
